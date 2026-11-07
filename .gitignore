@@ -7,3 +7,4 @@ config/projects.local.json
 config/projects.json
 .env*
 !.env.example
+requests/fieldnotes-responsive-navigation.json
