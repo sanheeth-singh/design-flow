@@ -1,0 +1,164 @@
+{
+  "observedAt": "2026-11-06T19:02:11.831Z",
+  "environment": {
+    "os": "Linux build environment",
+    "node": "24.22.1",
+    "npm": "11.9.0"
+  },
+  "provenance": "Scripted build-environment acceptance; no Discord request, human visual review, approval, integration or Windows result is claimed.",
+  "taskId": "47d92374-1d0e-43d1-ac33-f2b5a28018d9",
+  "status": "in_review",
+  "baseCommit": "4e350662206c58eaa14402007658af5dac93e53d",
+  "revisions": [
+    {
+      "number": 1,
+      "commit": "34e7e9619fb36182bcf356647b4cd21a3ddc338c",
+      "baseCommit": "4e350662206c58eaa14402007658af5dac93e53d",
+      "changedFiles": [
+        "src/app/globals.css",
+        "src/app/page.tsx",
+        "src/components/Navigation.tsx"
+      ],
+      "criteria": [
+        "Navigation fits at 375px without horizontal scrolling",
+        "Menu toggles with a labeled button and expanded state",
+        "Escape closes the menu and returns focus to its toggle",
+        "Desktop links remain visible"
+      ],
+      "criteriaVersion": 1,
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "summary": "Implement scoped mobile navigation",
+      "createdAt": "2026-11-06T19:01:27.832Z"
+    },
+    {
+      "number": 2,
+      "commit": "fd64061a17c9b072f624b269e25750ce6ffff2dd",
+      "baseCommit": "4e350662206c58eaa14402007658af5dac93e53d",
+      "changedFiles": [
+        "src/app/globals.css",
+        "src/app/page.tsx",
+        "src/components/Navigation.tsx"
+      ],
+      "criteria": [
+        "Navigation fits at 375px without horizontal scrolling",
+        "Menu toggles with a labeled button and expanded state",
+        "Escape closes the menu and returns focus to its toggle",
+        "Desktop links remain visible"
+      ],
+      "criteriaVersion": 1,
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "summary": "Increase mobile link targets after scripted feedback",
+      "createdAt": "2026-11-06T19:01:52.746Z"
+    }
+  ],
+  "checks": [
+    {
+      "id": "33bfcfa5-b6cb-45f5-80c6-c34bc9b5b982",
+      "revision": 1,
+      "commit": "34e7e9619fb36182bcf356647b4cd21a3ddc338c",
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "criteriaVersion": 1,
+      "checkId": "typecheck",
+      "script": "typecheck",
+      "startedAt": "2026-11-06T19:01:28.267Z",
+      "endedAt": "2026-11-06T19:01:30.201Z",
+      "outcome": "passed",
+      "exitCode": 0,
+      "log": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> design-flow-independent-demo@1.0.0 typecheck\n> tsc --noEmit\n\n"
+    },
+    {
+      "id": "8582be38-7b12-4a71-96b9-2e9ed9851db4",
+      "revision": 1,
+      "commit": "34e7e9619fb36182bcf356647b4cd21a3ddc338c",
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "criteriaVersion": 1,
+      "checkId": "lint",
+      "script": "lint",
+      "startedAt": "2026-11-06T19:01:30.254Z",
+      "endedAt": "2026-11-06T19:01:31.537Z",
+      "outcome": "passed",
+      "exitCode": 0,
+      "log": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> design-flow-independent-demo@1.0.0 lint\n> eslint src\n\n"
+    },
+    {
+      "id": "73cb398b-4d69-4492-9cf3-296f649d7cae",
+      "revision": 1,
+      "commit": "34e7e9619fb36182bcf356647b4cd21a3ddc338c",
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "criteriaVersion": 1,
+      "checkId": "build",
+      "script": "build",
+      "startedAt": "2026-11-06T19:01:31.786Z",
+      "endedAt": "2026-11-06T19:01:52.324Z",
+      "outcome": "passed",
+      "exitCode": 0,
+      "log": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> design-flow-independent-demo@1.0.0 build\n> next build --webpack\n\n\u25b2 Next.js 16.4.5 (webpack)\n\u2713 Running next.config.mjs took 18ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 6.0s\n  Running TypeScript ...\n  Finished TypeScript in 1802ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n\u2713 Generating static pages using 4 workers (3/3) in 465ms\n  Finalizing page optimization ...\n  Collecting build traces ...\n\nRoute (app)\n\u250c \u25cb /\n\u2514 \u25cb /_not-found\n\n\n\u25cb  (Static)  prerendered as static content\n\n"
+    },
+    {
+      "id": "bb87ee91-945e-4ab7-b389-b645ead19ac1",
+      "revision": 2,
+      "commit": "fd64061a17c9b072f624b269e25750ce6ffff2dd",
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "criteriaVersion": 1,
+      "checkId": "typecheck",
+      "script": "typecheck",
+      "startedAt": "2026-11-06T19:01:53.390Z",
+      "endedAt": "2026-11-06T19:01:54.845Z",
+      "outcome": "passed",
+      "exitCode": 0,
+      "log": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> design-flow-independent-demo@1.0.0 typecheck\n> tsc --noEmit\n\n"
+    },
+    {
+      "id": "ce490f0d-a193-40a3-a7c8-e2cefde8b4ae",
+      "revision": 2,
+      "commit": "fd64061a17c9b072f624b269e25750ce6ffff2dd",
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "criteriaVersion": 1,
+      "checkId": "lint",
+      "script": "lint",
+      "startedAt": "2026-11-06T19:01:54.896Z",
+      "endedAt": "2026-11-06T19:01:56.067Z",
+      "outcome": "passed",
+      "exitCode": 0,
+      "log": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> design-flow-independent-demo@1.0.0 lint\n> eslint src\n\n"
+    },
+    {
+      "id": "e4b0ccb5-2245-4022-a476-6e2b0f9ec2e5",
+      "revision": 2,
+      "commit": "fd64061a17c9b072f624b269e25750ce6ffff2dd",
+      "configHash": "52d596d4a0e18906cdd9c5f06863b3640502e204d51812d4895de8e6cf20e877",
+      "criteriaVersion": 1,
+      "checkId": "build",
+      "script": "build",
+      "startedAt": "2026-11-06T19:01:56.127Z",
+      "endedAt": "2026-11-06T19:02:11.831Z",
+      "outcome": "passed",
+      "exitCode": 0,
+      "log": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n\n> design-flow-independent-demo@1.0.0 build\n> next build --webpack\n\n\u25b2 Next.js 16.4.5 (webpack)\n\u2713 Running next.config.mjs took 13ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 2.3s\n  Running TypeScript ...\n  Finished TypeScript in 1401ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/3) ...\n\u2713 Generating static pages using 4 workers (3/3) in 608ms\n  Finalizing page optimization ...\n  Collecting build traces ...\n\nRoute (app)\n\u250c \u25cb /\n\u2514 \u25cb /_not-found\n\n\n\u25cb  (Static)  prerendered as static content\n\n"
+    }
+  ],
+  "feedback": [
+    {
+      "revision": 1,
+      "authorLabel": "automated feedback fixture",
+      "message": "Increase mobile link targets to at least 44px; scripted feedback, not human review.",
+      "at": "2026-11-06T19:01:52.555Z"
+    }
+  ],
+  "reviews": [],
+  "httpSmoke": [
+    "Production dashboard serves HTML",
+    "Dashboard API exposes same CLI-created task while both services run",
+    "Dashboard serves actual revision comparison",
+    "Same-origin dashboard API task creation succeeds",
+    "Cross-origin dashboard mutation rejected",
+    "Runtime token absent from dashboard response",
+    "Target production preview serves new navigation markup; browser behavior not claimed"
+  ],
+  "pending": [
+    "Windows Node 22.17 managed-agent runtime",
+    "Real Discord/Switch task delivery and CLI execution",
+    "Browser visual/responsive/keyboard inspection",
+    "Human local review and deliberate Git integration"
+  ]
+}

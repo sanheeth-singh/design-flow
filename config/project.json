@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "id": "demo-frontend",
+      "name": "Demo frontend",
+      "repositoryPath": "../../demo-frontend",
+      "frontendRoot": ".",
+      "baseBranch": "main",
+      "allowedPaths": [
+        "src",
+        "public"
+      ],
+      "deniedPaths": [
+        ".git",
+        ".github",
+        ".env",
+        "node_modules"
+      ],
+      "designRules": [
+        "Preserve the existing warm neutral and green palette",
+        "Support mobile layouts and keyboard navigation",
+        "Use existing design tokens and components"
+      ],
+      "checks": [
+        {
+          "id": "typecheck",
+          "runner": "npm",
+          "script": "typecheck",
+          "required": true,
+          "timeoutMs": 120000
+        },
+        {
+          "id": "lint",
+          "runner": "npm",
+          "script": "lint",
+          "required": true,
+          "timeoutMs": 120000
+        },
+        {
+          "id": "build",
+          "runner": "npm",
+          "script": "build",
+          "required": true,
+          "timeoutMs": 300000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+.flow/
+config/projects.local.json
+config/projects.json
+.env*
+!.env.example

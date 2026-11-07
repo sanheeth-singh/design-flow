@@ -1,0 +1,12 @@
+{
+  "title": "Make mobile navigation usable",
+  "brief": "Improve the independent demo frontend navigation on narrow screens. Preserve its palette and existing content. Implement in the recorded task worktree.",
+  "criteria": [
+    "At 375px width the navigation fits without horizontal page scrolling.",
+    "A labeled menu button opens and closes the mobile links and reports its expanded state.",
+    "Menu links can be reached with the keyboard; Escape closes the menu and restores focus to the toggle.",
+    "At desktop width the existing horizontal links remain visible."
+  ],
+  "authorLabel": "Discord requester (claimed)",
+  "sourceReference": "Replace with the optional Discord message link"
+}
