@@ -428,9 +428,14 @@ test("compiled service and CLI persist tasks while running, reject second writer
   const main = path.resolve("dist/apps/coordinator/src/main.js");
   let output = "";
   function launch() {
-    const c = spawn(process.execPath, [main], { env });
+    const c = spawn(process.execPath, [main], {
+      env,
+      stdio: ["ignore", "pipe", "pipe", "ipc"],
+    });
+
     c.stdout.on("data", (v) => (output += v));
     c.stderr.on("data", (v) => (output += v));
+
     return c;
   }
   async function ready() {
@@ -444,10 +449,15 @@ test("compiled service and CLI persist tasks while running, reject second writer
     throw Error(output);
   }
   async function stop(c) {
-    if (c.exitCode !== null) return;
-    const p = new Promise((r) => c.once("exit", r));
-    c.kill("SIGTERM");
-    await p;
+    if (c.exitCode !== null || c.signalCode !== null) return;
+
+    const exited = new Promise((resolve) => {
+      c.once("exit", resolve);
+    });
+
+    c.send("shutdown");
+
+    await exited;
   }
   let c = launch();
   try {
