@@ -33,7 +33,7 @@ The coordinator must remain running. The CLI and Next.js server use its automati
 - [Repeatable Discord-to-code demo](docs/demo.md)
 - [Verification results and pending live acceptance](docs/verification.md)
 - [Canonical agent instructions](AGENTS.md)
-- [Implementation context](docs/project-context.md)
+- [Implementation context](docs/projectcontext.md)
 
 ## Commands
 
